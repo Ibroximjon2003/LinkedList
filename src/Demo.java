@@ -16,5 +16,6 @@ public class Demo {
         list.insertGivenPosition(2, 100);
         list.display();
         list.length();
+        System.out.println("hello world");
     }
 }
