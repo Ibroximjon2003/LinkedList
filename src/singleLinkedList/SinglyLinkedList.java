@@ -1,4 +1,5 @@
-public class SingList {
+package singleLinkedList;
+public class SinglyLinkedList {
 
     public Node head;
     public void display () {

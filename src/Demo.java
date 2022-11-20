@@ -1,6 +1,11 @@
+import doubleLinkedList.DoublyLinkedList;
+import singleLinkedList.Node;
+import singleLinkedList.SinglyLinkedList;
+
 public class Demo {
     public static void main(String[] args) {
-        SingList list = new SingList();
+        /*
+        SinglyLinkedList list = new SinglyLinkedList();
         list.head = new Node(10);
         Node node2 = new Node(11);
         Node node3 = new Node(12);
@@ -17,5 +22,15 @@ public class Demo {
         list.display();
         list.length();
         System.out.println("hello world");
+         */
+
+        DoublyLinkedList dLinkedList = new DoublyLinkedList();
+        dLinkedList.insertStart(10);
+        dLinkedList.insertStart(9);
+        dLinkedList.insertEnd(11);
+        dLinkedList.insertGivenPosition(2, 100);
+
+        dLinkedList.displayForward();
+        dLinkedList.displayBackward();
     }
 }

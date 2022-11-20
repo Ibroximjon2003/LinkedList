@@ -1,3 +1,4 @@
+package doubleLinkedList;
 public class DNode {
     public int data;
     public DNode next;
