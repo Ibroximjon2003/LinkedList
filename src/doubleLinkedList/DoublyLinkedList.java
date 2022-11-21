@@ -76,5 +76,34 @@ public class DoublyLinkedList {
             newNode.previous = previousNode;
         }
     }
+    public void deleteStart() {
+        if (isEmpty()) {
+          System.out.println("The list is empty, you can't delete");
+        }
+        else{
+            DNode current = head;
+            current = current.next;
+            head = current;
+            head.previous = null;
+        }
+        length--;
+    }
+    public void deleteEnd() {
+        if (isEmpty()) {
+            System.out.println("The list is empty, you can't delete");
+        }
+        else{
+            //create current pointer which points to tail
+            DNode current = tail; 
+            //current pointer changes position previous node
+            current = current.previous;
+            //tail points current
+            tail = current;
+            //tail pointer next value should be null
+            tail.next = null;
+        }
+        length--;
+    }
+    
 
 }

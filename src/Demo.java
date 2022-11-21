@@ -1,6 +1,8 @@
-import doubleLinkedList.DoublyLinkedList;
-import singleLinkedList.Node;
-import singleLinkedList.SinglyLinkedList;
+import circularLinkedList.CircularSinglyLinkedList;
+// import doubleLinkedList.DoublyLinkedList;
+// import singleLinkedList.Node;
+// import singleLinkedList.SinglyLinkedList;
+// import singleLinkedList.Node;
 
 public class Demo {
     public static void main(String[] args) {
@@ -24,13 +26,24 @@ public class Demo {
         System.out.println("hello world");
          */
 
-        DoublyLinkedList dLinkedList = new DoublyLinkedList();
-        dLinkedList.insertStart(10);
-        dLinkedList.insertStart(9);
-        dLinkedList.insertEnd(11);
-        dLinkedList.insertGivenPosition(2, 100);
+        // DoublyLinkedList dLinkedList = new DoublyLinkedList();
+        // dLinkedList.insertStart(10);
+        // dLinkedList.insertStart(9);
+        // dLinkedList.insertEnd(11);
+        // dLinkedList.insertGivenPosition(2, 100);
+        // dLinkedList.insertEnd(1);
+        // dLinkedList.insertEnd(2);
+        // dLinkedList.insertEnd(3);
+        // dLinkedList.insertEnd(4);
+        // dLinkedList.deleteStart();
+        //dLinkedList.deleteEnd();
+        // dLinkedList.displayForward();
+        // dLinkedList.displayBackward();
+    
+        CircularSinglyLinkedList cirSingLinList = new CircularSinglyLinkedList();
+        cirSingLinList.createCircularSinglyLinkedList();
+        cirSingLinList.print();
 
-        dLinkedList.displayForward();
-        dLinkedList.displayBackward();
+        
     }
 }
